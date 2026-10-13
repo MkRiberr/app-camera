@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "name": "camera",
+    "slug": "camera",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Permitir que o app acesse a câmera para tirar fotos."
+        }
+      ],
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Permitir que o app acesse suas fotos.",
+          "savePhotosPermission": "Permitir que o app salve fotos na galeria."
+        }
+      ]
+    ]
+  }
+}
